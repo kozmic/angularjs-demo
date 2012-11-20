@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Demo</title>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/02-SimpleCtrl.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" media="all">
+</head>
+<body>
+
+<div class="container" ng-controller="SimpleCtrl">
+
+    <a class="btn btn-primary" ng-click="toggleVisibility()">Toggle visibility</a>
+    <p ng-show="visible">Mitt navn er {{name}}</p>
+
+</div>
+</body>
+</html>

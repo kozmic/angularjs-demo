@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html ng-app="SimpleApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Demo</title>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/03-SimpleApp.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" media="all">
+</head>
+<body>
+
+<div class="container" ng-controller="SimpleCtrl">
+    <h2>{{title}}</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+        <tr ng-repeat="person in people">
+            <td>{{person.name}}</td>
+            <td>{{person.age}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
