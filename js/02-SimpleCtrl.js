@@ -1,3 +1,5 @@
+'use strict';
+
 function SimpleCtrl($scope) {
     $scope.name = 'Ståle Pettersen';
     $scope.visible = true;
@@ -6,6 +8,4 @@ function SimpleCtrl($scope) {
         $scope.visible = !$scope.visible;
 
     };
-
-
 }
