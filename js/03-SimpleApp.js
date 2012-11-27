@@ -15,7 +15,7 @@ var SimpleCtrl = function ($scope) {
 
     $scope.people = [
         {name: 'Jøran Lillesand', age: 28, tronder: true},
-        {name: 'Ståle Pettersen', age: 20, tronder: false},
+        {name: 'Ståle Pettersen', age: 29, tronder: false},
         {name: 'Ola Nordmann', age: 50, tronder: false }
     ];
 
@@ -28,7 +28,6 @@ var SimpleCtrl = function ($scope) {
     $scope.deletePerson = function (person) {
         $scope.people.splice($scope.people.indexOf(person), 1);
     };
-
 
 }
 

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html ng-app="DirectivesApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Demo</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" media="all">
+    <script type="text/javascript" src="lib/showdown-none-amd.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-mocks.js"></script>
+    <script type="text/javascript" src="js/04-DirectivesApp.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Directives</h1>
+
+    <h3>Markdown</h3>
+    <not-markdown>
+# Hello BEKK!
+* Simple?
+- Elegant?
+    </not-markdown>
+
+<div ng-controller="ImageCtrl">
+    <h3>Image directive</h3>
+    <picture />
+</div>
+</div>
+</body>
+</html>
