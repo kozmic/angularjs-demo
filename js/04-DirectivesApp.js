@@ -16,15 +16,15 @@ angular.module('DirectivesApp', [])
             restrict: 'E',
             replace: false,
             link: function (scope, element, attrs) {
-                scope.$root.isOldIE = false;
+                scope.$root.hasDataSupport = false;
 
-                if (!scope.$root.isOldIE) {
-                    scope.imageSrc = "data:" + scope.image.mimeType + ";base64," + scope.image.data;
+                if (scope.$root.hasDataSupport) {
+                    element.attr("src", "img/" + scope.image.src);
                 } else {
-                    scope.imageSrc = "img/" + scope.image.src;
+                    element.attr("src","data:" + scope.image.mimeType + ";base64," + scope.image.data);
                 }
             },
-            template: '<img src="{{imageSrc}}"/>',
+            template: '<img />',
             replace: true
         }
     })

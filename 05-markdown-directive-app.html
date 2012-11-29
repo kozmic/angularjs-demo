@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html ng-app="MarkdownDirectiveApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Demo</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" media="all">
+    <script type="text/javascript" src="lib/showdown-none-amd.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-mocks.js"></script>
+    <script type="text/javascript" src="js/05-MarkdownDirectiveApp.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Directives</h1>
+
+    <h3>Markdown 1</h3>
+    <markdown>
+# Hello BEKK!
+* Simple?
+- Elegant?
+    </markdown>
+
+    <h3>Markdown 2</h3>
+    <markdown>
+# Second markdown element
+
+Check it: [Bekk Open](http://open.bekk.no/)
+
+Pwned: `sudo rm -rf /`
+    </markdown>
+
+</div>
+</body>
+</html>
