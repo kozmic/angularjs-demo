@@ -1,5 +1,3 @@
-'use strict';
-
 var SimpleApp = angular.module('SimpleApp', ['ngSanitize', 'simpleFilters']).
     // Routes populates ng-view:
     config(function ($routeProvider) {
@@ -20,7 +18,7 @@ var SimpleCtrl = function ($scope) {
     ];
 
     $scope.addPerson = function() {
-        $scope.people.push({name: $scope.name, age: $scope.age, tronder: false});
+        $scope.people.push({name: $scope.name, age: parseInt($scope.age, 10), tronder: false});
         $scope.name = "";
         $scope.age = "";
     };
@@ -29,7 +27,7 @@ var SimpleCtrl = function ($scope) {
         $scope.people.splice($scope.people.indexOf(person), 1);
     };
 
-}
+};
 
 //SimpleCtrl.$inject = ['$scope'];
 

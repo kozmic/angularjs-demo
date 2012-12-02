@@ -20,6 +20,7 @@
             <input type="text" ng-model="user.name" name="uName" required /><br />
             E-mail:
             <input type="email" ng-model="user.email" name="uEmail" required/><br />
+
             <div ng-show="form.uEmail.$dirty && form.uEmail.$invalid" class="alert alert-error">Invalid:
                 <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
                 <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>

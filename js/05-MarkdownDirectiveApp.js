@@ -1,8 +1,9 @@
 // From http://www.youtube.com/watch?v=A6wq16Ow5Ec
 angular.module('MarkdownDirectiveApp', [])
+
     .directive('markdown', function () {
         var converter = new Showdown.converter();
-        var editTemplate = '<textarea ng-show="isEditMode" ng-dblclick="switchToPreview()" rows="10" cols="20" ng-model="markdown"></textarea>';
+        var editTemplate = '<textarea ng-show="isEditMode" ng-dblclick="switchToPreview()" rows="10" cols="200" ng-model="markdown"></textarea>';
         var previewTemplate = '<div ng-hide="isEditMode" ng-dblclick="switchToEdit()">Preview</div>';
         return {
             restrict: 'E',

@@ -24,17 +24,25 @@
         </thead>
         <tbody>
         <tr ng-repeat="person in people | orderBy:'age':true">
-            <td>{{person.name}} <span>{{person.tronder | tronder }}</span></td>
-            <td>{{person.age}}</td>
-            <td><button class="btn" ng-click="deletePerson(person)"><i class="icon-remove"></i></button></td>
+            <td>
+                {{person.name}} <span>{{person.tronder | tronder }}</span>
+            </td>
+            <td>
+                {{person.age}}
+            </td>
+            <td>
+                <button class="btn" ng-click="deletePerson(person)"><i class="icon-remove"></i></button>
+            </td>
         </tr>
         </tbody>
     </table>
     <!-- rolling your own: novalidate-->
-    <form name="addPerson" class="form-horizontal" Xnovalidate ng-submit="addPerson()">
+    <form class="form-horizontal" novalidate ng-submit="addPerson()">
         <input type="text" ng-model="name" placeholder="Name" ng-required="true">
         <input type="text" ng-model="age" placeholder="Age">
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary">
+            Add
+        </button>
     </form>
 
     <footer>
