@@ -1,3 +1,5 @@
+'use strict';
+
 // Based on http://docs.angularjs.org/guide/forms
 function ValidationCtrl($scope) {
     $scope.master= {};

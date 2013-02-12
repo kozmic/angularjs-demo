@@ -1,3 +1,5 @@
+'use strict';
+
 // From http://www.youtube.com/watch?v=A6wq16Ow5Ec
 angular.module('MarkdownDirectiveApp', [])
 

@@ -1,3 +1,5 @@
+'use strict';
+
 var SimpleApp = angular.module('SimpleApp', ['ngSanitize', 'simpleFilters']).
     // Routes populates ng-view:
     config(function ($routeProvider) {
